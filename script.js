@@ -28,8 +28,13 @@
 
   const setButton = (icon, label) => { button.innerHTML = `<span aria-hidden="true">${icon}</span> ${label}`; };
 
+  function setCaption(text) {
+    caption.classList.add('swap');
+    window.setTimeout(() => { caption.textContent = text; caption.classList.remove('swap'); }, 200);
+  }
+
   function speak(text) {
-    caption.textContent = text;
+    setCaption(text);
     if (!synth) return;
     synth.cancel();
     synth.speak(new SpeechSynthesisUtterance(text));
