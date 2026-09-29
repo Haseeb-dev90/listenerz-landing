@@ -77,31 +77,20 @@ nav a:hover { opacity: 1; }
 .video-section { background: var(--navy); color: #fff; text-align: center; }
 .section-intro { margin-bottom: 2.2rem; }
 .video-card { max-width: 900px; margin-inline: auto; border-radius: 24px; overflow: hidden; border: 1px solid #ffffff22; background: var(--navy-2); box-shadow: 0 40px 80px #0006; text-align: left; }
-/* Studio set: screen wall, stage lights, bokeh */
-.host-stage { position: relative; height: min(64vw, 540px); overflow: hidden; background:
-  radial-gradient(circle at 8% 6%, #ffd56b 0 2.5%, transparent 7%),
-  radial-gradient(circle at 34% 4%, #ffffff44 0 3%, transparent 8%),
-  radial-gradient(circle at 70% 8%, #ff6a5a 0 3%, transparent 9%),
-  radial-gradient(circle at 96% 4%, #5ec2ff 0 3.5%, transparent 10%),
-  linear-gradient(180deg, #0b1230 0%, #131a48 45%, #0c1330 100%); }
-/* LED screen wall behind the host */
-.host-stage::before { content: ""; position: absolute; left: 4%; right: 4%; top: 26%; bottom: 20%; border-radius: 22px; background:
-  repeating-linear-gradient(115deg, transparent 0 46px, #ffffff1a 46px 48px),
-  linear-gradient(115deg, #0a3fb8 0%, #2f86ff 22%, #ff5d4a 48%, #ff9a3c 58%, #8a3ff0 80%, #0b2a7a 100%);
-  opacity: .9; box-shadow: 0 0 60px #4c8dff66, inset 0 0 40px #0006; }
-.host-stage::after { content: ""; position: absolute; left: 0; right: 0; top: 16%; height: 5px; background: linear-gradient(90deg, transparent, #ff8ab0, #7fd3ff, transparent); opacity: .8; filter: blur(1px); }
+/* Plain stage matching the page background */
+.host-stage { position: relative; height: min(64vw, 540px); overflow: hidden; background: var(--navy); }
 .stage-glow { display: none; position: absolute; left: 50%; top: 42%; width: 0; height: 0; }
 .stage-glow i { position: absolute; left: -150px; top: -150px; width: 300px; height: 300px; border-radius: 50%; border: 2px solid #7be7f266; opacity: 0; }
 .host-stage.speaking .stage-glow i { animation: ring 2.4s ease-out infinite; }
 .stage-glow i:nth-child(2) { animation-delay: .8s !important; }
 .stage-glow i:nth-child(3) { animation-delay: 1.6s !important; }
 .caption { position: absolute; top: 1.1rem; left: 50%; transform: translateX(-50%); z-index: 2; max-width: 88%; text-align: center; padding: .55rem 1.3rem; border-radius: 999px; background: #ffffff1f; border: 1px solid #ffffff38; backdrop-filter: blur(10px); font-size: clamp(.95rem, 2.2vw, 1.25rem); font-weight: 500; }
-.host-figure { position: absolute; bottom: 0; left: 50%; height: 90%; aspect-ratio: 708 / 734; transform: translateX(-50%); filter: drop-shadow(0 18px 28px #0009); }
+.host-figure { position: absolute; bottom: 0; left: 50%; height: 90%; aspect-ratio: 708 / 734; transform: translateX(-50%);  }
 .host-figure img { display: block; width: 100%; height: 100%; }
 .mouth-overlay { position: absolute; left: 51.7%; top: 33.6%; width: 3.6%; height: 1.4%; margin: -.7% 0 0 -1.8%; border-radius: 50%; background: #5a2a2e; opacity: 0; transform-origin: center; }
 .host-stage.speaking .mouth-overlay { opacity: .9; animation: talk .24s ease-in-out infinite alternate; }
 .host-stage.speaking .host-figure { animation: sway 4s ease-in-out infinite; }
-.desk { position: absolute; left: 0; right: 0; bottom: 0; height: 9%; z-index: 1; background: linear-gradient(#f7f9fc, #c3cad6); box-shadow: 0 -6px 18px #0004; }
+.desk { position: absolute; left: 0; right: 0; bottom: 0; height: 9%; z-index: 1; background: linear-gradient(#0d3f73, #0a3462); border-top: 1px solid #ffffff1f; }
 @keyframes talk { from { transform: scale(.7, .5); } to { transform: scale(1.1, 2.2); } }
 .sound-wave { position: absolute; right: 6%; bottom: 17%; display: flex; gap: 4px; align-items: center; height: 60px; opacity: .35; transition: opacity .3s; }
 .host-stage.speaking .sound-wave { opacity: 1; }
