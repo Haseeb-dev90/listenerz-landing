@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
   <a class="skip-link" href="#home">Skip to content</a>
@@ -41,52 +41,61 @@
         <div class="host-stage" id="videoStage">
           <div class="stage-glow" aria-hidden="true"><i></i><i></i><i></i></div>
           <div class="caption" id="caption" aria-live="polite">Press play to begin</div>
-          <svg class="host" viewBox="0 0 400 520" role="img" aria-label="AI host: a woman with a sleek black bob, brown eyes and pearl earrings, wearing a navy blazer over a white blouse, speaking to camera">
+          <svg class="host" viewBox="0 0 400 520" role="img" aria-label="AI host: an anime-style news anchor with short black hair and blue eyes, in a blue blazer and red tie at a studio desk, waving as she speaks">
             <defs>
-              <linearGradient id="gSkin" x1=".2" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#fdeadd"/><stop offset="1" stop-color="#f3cbb4"/></linearGradient>
-              <linearGradient id="gHair" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b4048"/><stop offset=".4" stop-color="#15171c"/><stop offset="1" stop-color="#0a0b0e"/></linearGradient>
-              <linearGradient id="gSuit" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22508f"/><stop offset=".55" stop-color="#12315f"/><stop offset="1" stop-color="#0a1f44"/></linearGradient>
-              <linearGradient id="gLapel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d63ae"/><stop offset="1" stop-color="#11336a"/></linearGradient>
-              <linearGradient id="gNeck" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcae93"/><stop offset=".35" stop-color="#f4d0ba"/><stop offset="1" stop-color="#f7d9c4"/></linearGradient>
-              <radialGradient id="gCheek"><stop offset="0" stop-color="#ee8f95" stop-opacity=".4"/><stop offset="1" stop-color="#ee8f95" stop-opacity="0"/></radialGradient>
+              <linearGradient id="gSkin" x1=".2" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#fff0e4"/><stop offset="1" stop-color="#f7d3bd"/></linearGradient>
+              <linearGradient id="gHair" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a4150"/><stop offset=".4" stop-color="#151821"/><stop offset="1" stop-color="#090a0f"/></linearGradient>
+              <linearGradient id="gBlazer" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a6cb8"/><stop offset="1" stop-color="#223f78"/></linearGradient>
+              <linearGradient id="gIris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d4fa8"/><stop offset=".6" stop-color="#4f96ef"/><stop offset="1" stop-color="#8fc6ff"/></linearGradient>
+              <linearGradient id="gDesk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f9fc"/><stop offset="1" stop-color="#c3cad6"/></linearGradient>
             </defs>
-            <!-- blazer + blouse -->
-            <path fill="url(#gSuit)" d="M18 520c0-80 8-132 26-160 16-24 42-30 86-34h140c44 4 70 10 86 34 18 28 26 80 26 160z"/>
-            <path fill="#fff" d="M150 324h100l16 196H134z"/>
-            <path fill="url(#gLapel)" d="M124 328l28-14 48 84-26 122H98c2-84 8-148 26-192zM276 328l-28-14-48 84 26 122h102c-2-84-8-148-26-192z"/>
-            <path fill="#fff" stroke="#cfd8e6" stroke-width="1.4" d="M152 324l26-12 22 84zM248 324l-26-12-22 84z"/>
-            <!-- bob (behind face) -->
-            <path fill="url(#gHair)" stroke="#07080a" stroke-width="3" d="M200 58C112 54 74 128 80 220c4 60-2 96 12 118 30 14 52-8 58-36l100 0c6 28 28 50 58 36 14-22 8-58 12-118 6-92-32-166-120-162z"/>
+            <!-- chair -->
+            <path fill="#15171d" d="M290 246c46 2 82 34 82 88v190h-84z"/>
+            <!-- torso -->
+            <path fill="url(#gBlazer)" d="M64 530c0-110 18-176 82-206h108c64 30 82 96 82 206z"/>
+            <!-- shirt, collar, tie -->
+            <path fill="#fff" d="M168 322h64l-14 110h-36z"/>
+            <path fill="#e9edf5" d="M168 322l32 34-20 12zM232 322l-32 34 20 12z"/>
+            <path fill="#23427f" d="M146 326l34-6 20 60-30 100h-46c-2-70 4-120 22-154zM254 326l-34-6-20 60 30 100h46c2-70-4-120-22-154z"/>
+            <path fill="#d92d35" d="M200 350l14 10-7 16 12 66-19 20-19-20 12-66-7-16z"/>
+            <path fill="#a81f27" d="M200 350l14 10-7 16 12 66-19 20z"/>
             <!-- neck -->
-            <path fill="url(#gNeck)" d="M178 262h44v58c0 12-10 26-22 26s-22-14-22-26z"/>
-            <!-- ears -->
-            <ellipse cx="139" cy="222" rx="7" ry="13" fill="#f3cbb4"/><ellipse cx="261" cy="222" rx="7" ry="13" fill="#f3cbb4"/>
-            <!-- face -->
-            <path fill="url(#gSkin)" d="M200 108c48 0 66 40 64 88-2 44-22 80-52 94q-12 6-24 0c-30-14-50-50-52-94-2-48 16-88 64-88z"/>
-            <ellipse cx="160" cy="242" rx="20" ry="12" fill="url(#gCheek)"/><ellipse cx="242" cy="242" rx="20" ry="12" fill="url(#gCheek)"/>
-            <!-- brows -->
-            <path fill="#1c1517" d="M154 196q22-14 42-4q-22-4-42 4zM246 196q-22-14-42-4q22-4 42 4z"/>
-            <!-- eyes -->
-            <path fill="#d9a291" opacity=".3" d="M156 204q20-14 40 0q-20-6-40 0zM244 204q-20-14-40 0q20-6 40 0z"/>
+            <path fill="url(#gSkin)" d="M181 262h38v62l-19 22-19-22z"/>
+            <path fill="#e2ad94" opacity=".5" d="M181 286c12 10 26 10 38 0v14c-12 10-26 10-38 0z"/>
+            <!-- head -->
+            <path fill="url(#gHair)" d="M200 68C130 64 104 128 116 206c4 28 0 46 14 66l24-32c-8-30-6-64 8-88 24 8 64 8 88 0 14 24 16 58 8 88l24 32c14-20 10-38 14-66 12-78-14-142-84-138z"/>
+            <path fill="url(#gSkin)" d="M200 112c48 0 68 42 64 88-4 40-30 72-64 76-34-4-60-36-64-76-4-46 16-88 64-88z"/>
+            <ellipse cx="156" cy="240" rx="14" ry="8" fill="#f58f98" opacity=".35"/><ellipse cx="244" cy="240" rx="14" ry="8" fill="#f58f98" opacity=".35"/>
+            <path fill="none" stroke="#221a1c" stroke-width="2.6" stroke-linecap="round" d="M152 188q14-8 30-4M218 184q16-4 30 4"/>
             <g class="eyes">
-              <g class="eye"><path fill="#fff" d="M158 212q18-14 38 0q-19 11-38 0z"/><circle cx="178" cy="210" r="6.4" fill="#5b4033"/><circle cx="178" cy="210" r="3.2" fill="#0f0a09"/><circle cx="180.6" cy="207.6" r="1.8" fill="#fff"/><path fill="none" stroke="#0f0a0c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M154 208l6 3q18-14 38-1M156 205l-4-3"/></g>
-              <g class="eye"><path fill="#fff" d="M204 212q19-14 38 0q-18 11-38 0z"/><circle cx="224" cy="210" r="6.4" fill="#5b4033"/><circle cx="224" cy="210" r="3.2" fill="#0f0a09"/><circle cx="226.6" cy="207.6" r="1.8" fill="#fff"/><path fill="none" stroke="#0f0a0c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M248 208l-6 3q-18-14-38-1M246 205l4-3"/></g>
+              <g class="eye"><ellipse cx="172" cy="210" rx="16" ry="18" fill="#fff"/><ellipse cx="173" cy="212" rx="12" ry="14" fill="url(#gIris)"/><ellipse cx="173" cy="212" rx="6" ry="8" fill="#0d1226"/><circle cx="168" cy="205" r="4" fill="#fff"/><circle cx="178" cy="219" r="2" fill="#fff"/><path fill="none" stroke="#0f0d14" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M154 206q4-14 18-14q13 0 18 10M155 208l-6 4"/></g>
+              <g class="eye"><ellipse cx="228" cy="210" rx="16" ry="18" fill="#fff"/><ellipse cx="227" cy="212" rx="12" ry="14" fill="url(#gIris)"/><ellipse cx="227" cy="212" rx="6" ry="8" fill="#0d1226"/><circle cx="222" cy="205" r="4" fill="#fff"/><circle cx="232" cy="219" r="2" fill="#fff"/><path fill="none" stroke="#0f0d14" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M246 206q-4-14-18-14q-13 0-18 10M245 208l6 4"/></g>
             </g>
-            <!-- nose -->
-            <path fill="none" stroke="#dba690" stroke-width="2.2" stroke-linecap="round" d="M198 214q-2 16-5 24q8 5 16 0"/>
-            <ellipse cx="201" cy="240" rx="5" ry="3" fill="#f2b5a5" opacity=".55"/>
-            <!-- mouth (soft smile) -->
+            <path fill="none" stroke="#e0a58f" stroke-width="2" stroke-linecap="round" d="M200 232q2 3 0 5"/>
             <g class="mouth-g">
-              <ellipse class="mouth-in" cx="200" cy="264" rx="11" ry="1" fill="#5a1a22"/>
-              <path class="lip-upper" fill="#d5868c" d="M181 263q9-8 19-5q10-3 19 5q-19 6-38 0z"/>
-              <g class="lip-lower"><path fill="#eaa5aa" d="M183 263q17 5 34 0q-4 13-17 13t-17-13z"/><ellipse cx="200" cy="271" rx="6" ry="1.5" fill="#fff" opacity=".55"/></g>
+              <ellipse class="mouth-in" cx="200" cy="252" rx="8" ry="1" fill="#5a1a22"/>
+              <path class="lip-upper" fill="#e07f86" d="M188 251q6-5 12-2q6-3 12 2q-12 4-24 0z"/>
+              <g class="lip-lower"><path fill="#f0a3a8" d="M189 251q11 4 22 0q-3 9-11 9t-11-9z"/></g>
             </g>
-            <!-- side-swept fringe with flick -->
-            <path fill="url(#gHair)" stroke="#07080a" stroke-width="3" stroke-linejoin="round" d="M236 86C198 90 158 116 138 172C132 188 118 200 96 204c26 10 50 2 58-16 10-36 42-72 92-84z"/>
-            <path fill="url(#gHair)" stroke="#07080a" stroke-width="3" d="M134 200C126 120 158 70 218 68c56-2 78 52 72 132-6-50-22-76-46-88-18-8-38-6-54 4-30 16-48 44-56 84z"/>
-            <path fill="none" stroke="#6a7484" stroke-width="3" stroke-linecap="round" opacity=".55" d="M150 110q30-30 76-32M112 160q-6 40-8 70M296 130q8 50 4 100M180 96q-24 20-36 52"/>
-            <!-- pearl earrings -->
-            <g class="earring"><circle cx="139" cy="236" r="4.6" fill="#fff" stroke="#d9dde4" stroke-width="1"/><circle cx="261" cy="236" r="4.6" fill="#fff" stroke="#d9dde4" stroke-width="1"/></g>
+            <!-- fringe + side locks -->
+            <path fill="url(#gHair)" d="M128 204C122 128 156 80 204 80c50 0 82 48 74 124l-14-38-14 22-20-52-14 44-18-48-18 46-18-42-16 34-16-16z"/>
+            <path fill="url(#gHair)" d="M132 196c-10 36-8 62 6 84l14-36zM268 196c10 36 8 62-6 84l-14-36z"/>
+            <path fill="none" stroke="#7d8aa3" stroke-width="3" stroke-linecap="round" opacity=".55" d="M160 104q26-16 56-12M244 112q12 14 16 34M136 150q-4 20 0 44"/>
+            <!-- desk -->
+            <path fill="url(#gDesk)" d="M-600 468q600-14 1600 0v120H-600z"/>
+            <path fill="none" stroke="#fff" stroke-width="3" opacity=".7" d="M-600 470q600-14 1600 0"/>
+            <!-- resting arm + hand -->
+            <path fill="none" stroke="url(#gBlazer)" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" d="M282 356L330 414 272 466"/>
+            <path fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" d="M262 470l-6 4"/>
+            <rect x="256" y="458" width="14" height="10" rx="3" fill="#aeb6c4" transform="rotate(-38 263 463)"/>
+            <g transform="rotate(-8 240 478)"><ellipse cx="240" cy="478" rx="24" ry="11" fill="#fff" stroke="#dfe3ec" stroke-width="1.5"/><path fill="none" stroke="#dfe3ec" stroke-width="1.5" d="M222 476h-14M222 480h-14M222 484h-12"/></g>
+            <!-- waving arm + hand -->
+            <g class="wave">
+              <path fill="none" stroke="url(#gBlazer)" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" d="M126 360L66 410 46 332"/>
+              <path fill="none" stroke="#fff" stroke-width="28" stroke-linecap="round" d="M46 338l-2-14"/>
+              <g stroke-linecap="round" fill="none"><path stroke="#d7dbe5" stroke-width="10" d="M32 292l-8-26M42 286l-2-30M52 286l6-30M62 294l12-24"/><path stroke="#fff" stroke-width="7" d="M32 292l-8-26M42 286l-2-30M52 286l6-30M62 294l12-24"/></g>
+              <ellipse cx="46" cy="304" rx="20" ry="22" fill="#fff" stroke="#d7dbe5" stroke-width="1.5"/>
+            </g>
           </svg>
           <div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
           <button class="play-button" id="playButton" type="button" aria-label="Play 60-second ListenerZ introduction"><span>▶</span> Play introduction</button>
@@ -111,6 +120,6 @@
     <section class="cta" id="join"><p class="eyebrow">Join the movement</p><h2>Talk when you’re ready.<br>Be heard when it matters.</h2><a class="button button-light" href="mailto:support@listenerz.com?subject=Hello%20ListenerZ&amp;body=Hi%20ListenerZ%20team%2C%0A%0A">Get in touch</a></section>
   </main>
   <footer id="contact"><div><a class="brand" href="#home"><img src="assets/listenerz-logo.svg" alt=""><span>The ListenerZ</span></a><p>Private conversation. Human connection.</p></div><div><h3>Contact</h3><a href="mailto:support@listenerz.com">support@listenerz.com</a><a href="tel:18005478369">1-800-LISTENZ</a></div><small>© 2026 The ListenerZ. All rights reserved.</small></footer>
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>
