@@ -130,7 +130,7 @@ nav a:hover { opacity: 1; }
 .cta { background: var(--orange); color: #fff; text-align: center; }
 .cta .eyebrow { color: var(--navy); }
 .cta h2 { margin-bottom: 1.6rem; }
-footer { background: var(--navy); color: #fff; padding: 3rem max(var(--gutter), calc((100% - var(--max)) / 2)); display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; }
+footer { background: var(--navy); color: #fff; padding: 3rem max(var(--gutter), calc((100% - var(--max)) / 2)); display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
 footer h3 { font-size: 1.1rem; margin-bottom: .5rem; }
 footer a:not(.brand) { display: block; text-decoration: none; opacity: .85; }
 footer a:not(.brand):hover { opacity: 1; text-decoration: underline; }
