@@ -87,10 +87,10 @@ nav a:hover { opacity: 1; }
 .caption { position: absolute; top: 1.1rem; left: 50%; transform: translateX(-50%); z-index: 2; max-width: 88%; text-align: center; padding: .55rem 1.3rem; border-radius: 999px; background: #ffffff1f; border: 1px solid #ffffff38; backdrop-filter: blur(10px); font-size: clamp(.95rem, 2.2vw, 1.25rem); font-weight: 500; }
 .host-figure { position: absolute; bottom: 0; left: 50%; height: 80%; aspect-ratio: 708 / 501; transform: translateX(-50%);  }
 .host-figure img { display: block; width: 100%; height: 100%; }
-.mouth-overlay { position: absolute; left: 51.7%; top: 48.7%; width: 3.6%; height: 1.6%; margin: -.8% 0 0 -1.8%; border-radius: 50%; background: #5a2a2e; opacity: 0; transform-origin: center; }
+.mouth-overlay { position: absolute; left: 51.7%; top: 49.6%; width: 3.5%; height: 1%; margin: -.5% 0 0 -1.75%; border-radius: 50%; background: #4a2226; opacity: 0; transform-origin: center; }
 .host-stage.speaking .mouth-overlay { opacity: .9; animation: talk .24s ease-in-out infinite alternate; }
 .host-stage.speaking .host-figure { animation: sway 4s ease-in-out infinite; }
-@keyframes talk { from { transform: scale(.7, .5); } to { transform: scale(1.1, 2.2); } }
+@keyframes talk { from { transform: scale(.75, .6); } to { transform: scale(1.05, 1.9); } }
 .sound-wave { position: absolute; right: 6%; bottom: 17%; display: flex; gap: 4px; align-items: center; height: 60px; opacity: .35; transition: opacity .3s; }
 .host-stage.speaking .sound-wave { opacity: 1; }
 .sound-wave i { width: 5px; height: 8px; border-radius: 3px; background: linear-gradient(var(--teal), #7be7f2); }
